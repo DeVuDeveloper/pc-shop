@@ -5,25 +5,25 @@ import { FEATURED_PRODUCTS, RECOMMENDED_PRODUCTS, SHOP } from 'constants/routes'
 import {
   useDocumentTitle, useFeaturedProducts, useRecommendedProducts, useScrollTop,
 } from 'hooks';
-import bannerImg from 'images/banner-girl.png';
+import bannerImg from 'images/pc1.png';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
-  useDocumentTitle('shop | Home');
+  useDocumentTitle('PC-Shop | Home');
   useScrollTop();
 
   const {
     featuredProducts,
     fetchFeaturedProducts,
     isLoading: isLoadingFeatured,
-    error: errorFeatured
+    error: errorFeatured,
   } = useFeaturedProducts(6);
   const {
     recommendedProducts,
     fetchRecommendedProducts,
     isLoading: isLoadingRecommended,
-    error: errorRecommended
+    error: errorRecommended,
   } = useRecommendedProducts(6);
 
   return (
@@ -32,13 +32,14 @@ const Home = () => {
         <div className="banner">
           <div className="banner-desc">
             <h1 className="text-thin">
-              <strong>See</strong>
-              &nbsp;everything with&nbsp;
-              <strong>Clarity</strong>
+              <strong>Welcome</strong>
+              &nbsp;to the safest marketplace&nbsp;
+              <strong>For newish tech</strong>
             </h1>
             <p>
-              Buying eyewear should leave you happy and good-looking, with money in your pocket.
-              Glasses, sunglasses, and contacts—we’ve got your eyes covered.
+              Experience a new level of performance with an award-winning Digital Storm PC.
+              Built with the latest technology,
+              highest quality components and backed by lifetime support.
             </p>
             <br />
             <Link to={SHOP} className="button">
