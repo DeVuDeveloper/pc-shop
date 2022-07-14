@@ -1,13 +1,13 @@
 {
-  "name": "react-webpack-boilerplate",
+  "name": "react-webpack-PC-Shopplate",
   "version": "1.2.0",
   "main": "index.js",
-  "author": "Julius Guevarra",
+  "author": "Vujovic Dejan",
   "keywords": [
     "react-webpack",
-    "boilerplate",
-    "react-webpack-boilerplate",
-    "react-boilerplate"
+    "PC-Shopplate",
+    "react-webpack-PC-Shopplate",
+    "react-PC-Shopplate"
   ],
   "license": "MIT",
   "scripts": {

@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom';
 import 'normalize.css/normalize.css';
 import 'styles/style.scss';
 import WebFont from 'webfontloader';
-import App from 'components/App';
+import App from './App';
 
 WebFont.load({
   google: {
-    families: ['Roboto']
-  }
+    families: ['Roboto'],
+  },
 });
 
 if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {

@@ -1,4 +1,4 @@
-# React With Webpack Boilerplate
+# React With Webpack PC-Shopplate
 
 ### Version
 1.2.0

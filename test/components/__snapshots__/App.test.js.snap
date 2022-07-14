@@ -3,7 +3,7 @@
 exports[`Should render App component 1`] = `
 <div>
   <h1>
-    React Webpack Boilerplate
+    React Webpack PC-Shopplate
   </h1>
   <p>
     Edit App component in src folder to get started.
