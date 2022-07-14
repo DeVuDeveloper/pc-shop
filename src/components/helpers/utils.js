@@ -51,8 +51,8 @@ export const displayActionMessage = (msg, status = 'info') => {
     status === 'info'
       ? 'toast-info'
       : status === 'success'
-      ? 'toast-success'
-      : 'toast-error'
+        ? 'toast-success'
+        : 'toast-error'
     // eslint-disable-next-line indent
   }`;
   span.className = 'toast-msg';

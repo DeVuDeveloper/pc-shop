@@ -15,7 +15,7 @@ const ImageLoader = ({ src, alt, className }) => {
     <>
       {!loaded && (
         <LoadingOutlined style={{
-          position: 'absolute', top: 0, bottom: 0, right: 0, left: 0, margin: 'auto'
+          position: 'absolute', top: 0, bottom: 0, right: 0, left: 0, margin: 'auto',
         }}
         />
       )}
@@ -30,13 +30,13 @@ const ImageLoader = ({ src, alt, className }) => {
 };
 
 ImageLoader.defaultProps = {
-  className: 'image-loader'
+  className: 'image-loader',
 };
 
 ImageLoader.propTypes = {
   src: PropType.string.isRequired,
   alt: PropType.string.isRequired,
-  className: PropType.string
+  className: PropType.string,
 };
 
 export default ImageLoader;

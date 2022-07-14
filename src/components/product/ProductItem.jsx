@@ -29,7 +29,7 @@ const ProductItem = ({ product, isItemOnBasket, addToBasket }) => {
         className={`product-card ${!product.id ? 'product-loading' : ''}`}
         style={{
           border: product && itemOnBasket ? '1px solid #a6a5a5' : '',
-          boxShadow: product && itemOnBasket ? '0 10px 15px rgba(0, 0, 0, .07)' : 'none'
+          boxShadow: product && itemOnBasket ? '0 10px 15px rgba(0, 0, 0, .07)' : 'none',
         }}
       >
         {itemOnBasket && <CheckOutlined className="fa fa-check product-card-check" />}
@@ -76,14 +76,14 @@ const ProductItem = ({ product, isItemOnBasket, addToBasket }) => {
 
 ProductItem.defaultProps = {
   isItemOnBasket: undefined,
-  addToBasket: undefined
+  addToBasket: undefined,
 };
 
 ProductItem.propTypes = {
   // eslint-disable-next-line react/forbid-prop-types
   product: PropType.object.isRequired,
   isItemOnBasket: PropType.func,
-  addToBasket: PropType.func
+  addToBasket: PropType.func,
 };
 
 export default ProductItem;
