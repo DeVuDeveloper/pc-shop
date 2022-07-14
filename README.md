@@ -1,4 +1,4 @@
-# React With Webpack PC-Shopplate
+# PC-Shop
 
 ### Version
 1.2.0
