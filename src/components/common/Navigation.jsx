@@ -7,7 +7,7 @@ import {
   Link, NavLink, useLocation,
 } from 'react-router-dom';
 import UserAvatar from 'views/account/components/UserAvatar';
-import BasketToggle from '../basket/BasketToggle';
+import BasketToggle from '../../basket/BasketToogle';
 import Badge from './Badge';
 import FiltersToggle from './FiltersToggle';
 import MobileNavigation from './MobileNavigation';
