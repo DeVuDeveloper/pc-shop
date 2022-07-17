@@ -1,4 +1,5 @@
 import { ADMIN_DASHBOARD } from 'constants/routes';
+import logo from 'images/pc1.png';
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
@@ -14,6 +15,7 @@ const AdminNavigation = () => {
     <nav className="navigation navigation-admin">
       <div className="logo">
         <Link to={ADMIN_DASHBOARD} style={{ display: 'flex', alignItems: 'center' }}>
+          <img alt="Logo" src={logo} />
           <h3>ADMIN PANEL</h3>
         </Link>
       </div>

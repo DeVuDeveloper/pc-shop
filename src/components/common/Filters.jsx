@@ -12,7 +12,7 @@ const Filters = ({ closeModal }) => {
   const { filter, isLoading, products } = useSelector((state) => ({
     filter: state.filter,
     isLoading: state.app.loading,
-    products: state.products.items,
+    products: state.products.items
   }));
   const [field, setFilter] = useState({
     brand: filter.brand,
@@ -160,7 +160,7 @@ const Filters = ({ closeModal }) => {
 };
 
 Filters.propTypes = {
-  closeModal: PropType.func.isRequired,
+  closeModal: PropType.func.isRequired
 };
 
 export default withRouter(Filters);

@@ -1,10 +1,10 @@
 /* eslint-disable react/forbid-prop-types */
-import { Preloader } from 'components/common';
 import PropType from 'prop-types';
 import React, { StrictMode } from 'react';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import AppRouter from 'routers/AppRouter';
+import Preloader from './components/common/Preloader';
 
 const App = ({ store, persistor }) => (
   <StrictMode>

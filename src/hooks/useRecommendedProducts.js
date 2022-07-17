@@ -47,8 +47,9 @@ const useRecommendedProducts = (itemsCount) => {
     }
   }, []);
 
+
   return {
-    recommendedProducts, fetchRecommendedProducts, isLoading, error,
+    recommendedProducts, fetchRecommendedProducts, isLoading, error
   };
 };
 

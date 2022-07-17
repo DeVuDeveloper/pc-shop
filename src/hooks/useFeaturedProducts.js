@@ -48,7 +48,7 @@ const useFeaturedProducts = (itemsCount) => {
   }, []);
 
   return {
-    featuredProducts, fetchFeaturedProducts, isLoading, error,
+    featuredProducts, fetchFeaturedProducts, isLoading, error
   };
 };
 

@@ -7,7 +7,7 @@ const Modal = ({
   onRequestClose,
   afterOpenModal,
   overrideStyle,
-  children,
+  children
 }) => {
   const defaultStyle = {
     content: {
@@ -23,8 +23,8 @@ const Modal = ({
       transform: 'translate(-50%, -50%)',
       boxShadow: '0 5px 10px rgba(0, 0, 0, .1)',
       animation: 'scale .3s ease',
-      ...overrideStyle,
-    },
+      ...overrideStyle
+    }
   };
 
   AppModal.setAppElement('#app');
@@ -46,7 +46,7 @@ const Modal = ({
 
 Modal.defaultProps = {
   overrideStyle: {},
-  afterOpenModal: () => { },
+  afterOpenModal: () => { }
 };
 
 Modal.propTypes = {
@@ -57,8 +57,8 @@ Modal.propTypes = {
   overrideStyle: PropType.object,
   children: PropType.oneOfType([
     PropType.arrayOf(PropType.node),
-    PropType.node,
-  ]).isRequired,
+    PropType.node
+  ]).isRequired
 };
 
 export default Modal;

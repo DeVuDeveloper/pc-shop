@@ -1,7 +1,7 @@
 import PropType from 'prop-types';
 import React, { useState } from 'react';
 import {
-  Handles, Rail, Slider, Ticks, Tracks,
+  Handles, Rail, Slider, Ticks, Tracks
 } from 'react-compound-slider';
 import Handle from './Handle';
 import SliderRail from './SliderRail';
@@ -10,11 +10,11 @@ import Track from './Track';
 
 const sliderStyle = {
   position: 'relative',
-  width: '100%',
+  width: '100%'
 };
 
 const PriceRange = ({
-  min, max, initMin, initMax, productsCount, onPriceChange,
+  min, max, initMin, initMax, productsCount, onPriceChange
 }) => {
   const [state, setState] = useState({
     domain: [min, max],
@@ -23,21 +23,22 @@ const PriceRange = ({
     inputMin: initMin || min,
     inputMax: initMax || max,
     inputError: false,
-    reversed: false,
+    reversed: false
   });
 
   const onUpdate = (update) => {
     setState(() => ({
-      ...state, update, inputMin: update[0], inputMax: update[1],
+      ...state, update, inputMin: update[0], inputMax: update[1]
     }));
   };
 
   const onChange = (values) => {
     setState(() => ({
-      ...state, values, inputMin: values[0], inputMax: values[1],
+      ...state, values, inputMin: values[0], inputMax: values[1]
     }));
     if (values[0] < values[1]) onPriceChange(...values);
   };
+
 
   const inputClassName = () => (state.inputError ? 'price-range-input price-input-error' : 'price-range-input');
 
@@ -121,7 +122,7 @@ const PriceRange = ({
 
 PriceRange.defaultProps = {
   initMin: undefined,
-  initMax: undefined,
+  initMax: undefined
 };
 
 PriceRange.propTypes = {
@@ -130,7 +131,7 @@ PriceRange.propTypes = {
   min: PropType.number.isRequired,
   max: PropType.number.isRequired,
   productsCount: PropType.number.isRequired,
-  onPriceChange: PropType.func.isRequired,
+  onPriceChange: PropType.func.isRequired
 };
 
 export default PriceRange;

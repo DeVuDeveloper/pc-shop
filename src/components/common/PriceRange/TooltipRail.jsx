@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-props-no-spreading */
 import PropType from 'prop-types';
 import React, { Component } from 'react';
 
@@ -8,7 +7,8 @@ const railStyle = {
   transform: 'translate(0%, -50%)',
   height: 20,
   cursor: 'pointer',
-  zIndex: 300,
+  zIndex: 300
+  // border: '1px solid grey',
 };
 
 const railCenterStyle = {
@@ -19,7 +19,7 @@ const railCenterStyle = {
   borderRadius: 7,
   cursor: 'pointer',
   pointerEvents: 'none',
-  backgroundColor: '#d0d0d0',
+  backgroundColor: '#d0d0d0'
 };
 
 class TooltipRail extends Component {
@@ -28,7 +28,7 @@ class TooltipRail extends Component {
 
     this.state = {
       value: null,
-      percent: null,
+      percent: null
     };
   }
 
@@ -63,7 +63,7 @@ class TooltipRail extends Component {
               left: `${percent}%`,
               position: 'absolute',
               marginLeft: '-11px',
-              marginTop: '-35px',
+              marginTop: '-35px'
             }}
           >
             <div className="tooltip">
@@ -76,9 +76,10 @@ class TooltipRail extends Component {
         ) : null}
         <div
           style={railStyle}
+          // eslint-disable-next-line react/jsx-props-no-spreading
           {...getRailProps({
             onMouseEnter: this.onMouseEnter,
-            onMouseLeave: this.onMouseLeave,
+            onMouseLeave: this.onMouseLeave
           })}
         />
         <div style={railCenterStyle} />
@@ -90,14 +91,14 @@ class TooltipRail extends Component {
 TooltipRail.defaultProps = {
   getEventData: undefined,
   activeHandleID: undefined,
-  disabled: false,
+  disabled: false
 };
 
 TooltipRail.propTypes = {
   getEventData: PropType.func,
   activeHandleID: PropType.string,
   getRailProps: PropType.func.isRequired,
-  disabled: PropType.bool,
+  disabled: PropType.bool
 };
 
 export default TooltipRail;

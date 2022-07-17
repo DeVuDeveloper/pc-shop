@@ -10,7 +10,7 @@ const Tick = ({ tick, count, format }) => (
         width: 1,
         height: 5,
         backgroundColor: 'rgb(200,200,200)',
-        left: `${tick.percent}%`,
+        left: `${tick.percent}%`
       }}
     />
     <div
@@ -21,7 +21,7 @@ const Tick = ({ tick, count, format }) => (
         textAlign: 'center',
         marginLeft: `${-(100 / count) / 2}%`,
         width: `${100 / count}%`,
-        left: `${tick.percent}%`,
+        left: `${tick.percent}%`
       }}
     >
       {format(tick.value)}
@@ -33,14 +33,14 @@ Tick.propTypes = {
   tick: PropType.shape({
     id: PropType.string.isRequired,
     value: PropType.number.isRequired,
-    percent: PropType.number.isRequired,
+    percent: PropType.number.isRequired
   }).isRequired,
   count: PropType.number.isRequired,
-  format: PropType.func,
+  format: PropType.func
 };
 
 Tick.defaultProps = {
-  format: (d) => d,
+  format: (d) => d
 };
 
 export default Tick;

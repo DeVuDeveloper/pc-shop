@@ -1,13 +1,14 @@
 /* eslint-disable indent */
 import { FilterOutlined, ShoppingOutlined } from '@ant-design/icons';
 import * as ROUTE from 'constants/routes';
+import logo from 'images/logo-full.png';
 import React, { useEffect, useRef } from 'react';
 import { useSelector } from 'react-redux';
 import {
-  Link, NavLink, useLocation,
+  Link, NavLink, useLocation
 } from 'react-router-dom';
 import UserAvatar from 'views/account/components/UserAvatar';
-import BasketToggle from '../../basket/BasketToogle';
+import BasketToggle from '../basket/BasketToggle';
 import Badge from './Badge';
 import FiltersToggle from './FiltersToggle';
 import MobileNavigation from './MobileNavigation';
@@ -67,6 +68,9 @@ const Navigation = () => {
   }
   return (
     <nav className="navigation" ref={navbar}>
+      <div className="logo">
+        <Link onClick={onClickLink} to="/"><img alt="Logo" src={logo} /></Link>
+      </div>
       <ul className="navigation-menu-main">
         <li><NavLink activeClassName="navigation-menu-active" exact to={ROUTE.HOME}>Home</NavLink></li>
         <li><NavLink activeClassName="navigation-menu-active" to={ROUTE.SHOP}>Shop</NavLink></li>

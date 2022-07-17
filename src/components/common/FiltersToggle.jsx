@@ -38,8 +38,8 @@ const FiltersToggle = ({ children }) => {
 FiltersToggle.propTypes = {
   children: PropType.oneOfType([
     PropType.arrayOf(PropType.node),
-    PropType.node,
-  ]).isRequired,
+    PropType.node
+  ]).isRequired
 };
 
 export default FiltersToggle;

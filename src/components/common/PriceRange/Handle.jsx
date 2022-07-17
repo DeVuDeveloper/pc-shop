@@ -6,9 +6,10 @@ class Handle extends Component {
     super(props);
 
     this.state = {
-      mouseOver: false,
+      mouseOver: false
     };
   }
+
 
   onMouseEnter() {
     this.setState({ mouseOver: true });
@@ -24,7 +25,7 @@ class Handle extends Component {
       handle: { id, value, percent },
       isActive,
       disabled,
-      getHandleProps,
+      getHandleProps
     } = this.props;
     const { mouseOver } = this.state;
 
@@ -36,7 +37,7 @@ class Handle extends Component {
               left: `${percent}%`,
               position: 'absolute',
               marginLeft: '-11px',
-              marginTop: '-35px',
+              marginTop: '-35px'
             }}
           >
             <div className="tooltip">
@@ -58,12 +59,12 @@ class Handle extends Component {
             height: 42,
             cursor: 'pointer',
             // border: '1px solid grey',
-            backgroundColor: 'none',
+            backgroundColor: 'none'
           }}
           // eslint-disable-next-line react/jsx-props-no-spreading
           {...getHandleProps(id, {
             onMouseEnter: this.onMouseEnter,
-            onMouseLeave: this.onMouseLeave,
+            onMouseLeave: this.onMouseLeave
           })}
         />
         <div
@@ -83,7 +84,7 @@ class Handle extends Component {
             border: 0,
             borderRadius: '50%',
             boxShadow: '1px 1px 1px 1px rgba(0, 0, 0, 0.2)',
-            backgroundColor: disabled ? '#666' : '#1a1a1a',
+            backgroundColor: disabled ? '#666' : '#1a1a1a'
           }}
         />
       </>
@@ -97,15 +98,15 @@ Handle.propTypes = {
   handle: PropType.shape({
     id: PropType.string.isRequired,
     value: PropType.number.isRequired,
-    percent: PropType.number.isRequired,
+    percent: PropType.number.isRequired
   }).isRequired,
   getHandleProps: PropType.func.isRequired,
   isActive: PropType.bool.isRequired,
-  disabled: PropType.bool,
+  disabled: PropType.bool
 };
 
 Handle.defaultProps = {
-  disabled: false,
+  disabled: false
 };
 
 export default Handle;

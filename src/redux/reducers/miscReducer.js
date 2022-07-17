@@ -1,8 +1,7 @@
 import {
-  IS_AUTHENTICATING,
-  LOADING,
+  IS_AUTHENTICATING, LOADING,
   SET_AUTH_STATUS,
-  SET_REQUEST_STATUS,
+  SET_REQUEST_STATUS
 } from 'constants/constants';
 
 const initState = {
@@ -10,7 +9,7 @@ const initState = {
   isAuthenticating: false,
   authStatus: null,
   requestStatus: null,
-  theme: 'light',
+  theme: 'light'
 };
 
 export default (state = initState, action) => {
@@ -18,22 +17,22 @@ export default (state = initState, action) => {
     case LOADING:
       return {
         ...state,
-        loading: action.payload,
+        loading: action.payload
       };
     case IS_AUTHENTICATING:
       return {
         ...state,
-        isAuthenticating: action.payload,
+        isAuthenticating: action.payload
       };
     case SET_REQUEST_STATUS:
       return {
         ...state,
-        requestStatus: action.payload,
+        requestStatus: action.payload
       };
     case SET_AUTH_STATUS:
       return {
         ...state,
-        authStatus: action.payload,
+        authStatus: action.payload
       };
     default:
       return state;

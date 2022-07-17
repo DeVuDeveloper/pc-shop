@@ -8,7 +8,8 @@ const railOuterStyle = {
   width: '100%',
   height: 42,
   borderRadius: 7,
-  cursor: 'pointer',
+  cursor: 'pointer'
+  // border: '1px solid grey',
 };
 
 const railInnerStyle = {
@@ -18,7 +19,7 @@ const railInnerStyle = {
   transform: 'translate(0%, -50%)',
   borderRadius: 7,
   pointerEvents: 'none',
-  backgroundColor: '#d0d0d0',
+  backgroundColor: '#d0d0d0'
 };
 
 const SliderRail = ({ getRailProps }) => (
@@ -29,7 +30,7 @@ const SliderRail = ({ getRailProps }) => (
 );
 
 SliderRail.propTypes = {
-  getRailProps: PropType.func.isRequired,
+  getRailProps: PropType.func.isRequired
 };
 
 export default SliderRail;

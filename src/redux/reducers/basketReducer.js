@@ -1,10 +1,8 @@
 import {
-  ADD_QTY_ITEM,
-  ADD_TO_BASKET,
+  ADD_QTY_ITEM, ADD_TO_BASKET,
   CLEAR_BASKET,
-  MINUS_QTY_ITEM,
-  REMOVE_FROM_BASKET,
-  SET_BASKET_ITEMS,
+  MINUS_QTY_ITEM, REMOVE_FROM_BASKET,
+  SET_BASKET_ITEMS
 } from 'constants/constants';
 
 export default (state = [], action) => {
@@ -24,7 +22,7 @@ export default (state = [], action) => {
         if (product.id === action.payload) {
           return {
             ...product,
-            quantity: product.quantity + 1,
+            quantity: product.quantity + 1
           };
         }
         return product;
@@ -34,7 +32,7 @@ export default (state = [], action) => {
         if (product.id === action.payload) {
           return {
             ...product,
-            quantity: product.quantity - 1,
+            quantity: product.quantity - 1
           };
         }
         return product;

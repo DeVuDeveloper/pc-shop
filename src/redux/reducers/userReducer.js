@@ -1,5 +1,17 @@
 import { ADD_USER, DELETE_USER, EDIT_USER } from 'constants/constants';
 
+// const initState = [
+//   {
+//     firstname: 'Gago',
+//     lastname: 'Ka',
+//     email: 'gagoka@mail.com',
+//     password: 'gagooo',
+//     avatar: '',
+//     banner: '',
+//     dateJoined: 0
+//   }
+// ];
+
 export default (state = {}, action) => {
   switch (action.type) {
     case ADD_USER:
@@ -9,7 +21,7 @@ export default (state = {}, action) => {
         if (user.id === action.payload.id) {
           return {
             ...user,
-            ...action.payload,
+            ...action.payload
           };
         }
         return user;

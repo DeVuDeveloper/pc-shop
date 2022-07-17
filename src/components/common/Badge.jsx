@@ -12,8 +12,8 @@ Badge.propTypes = {
   count: PropType.number.isRequired,
   children: PropType.oneOfType([
     PropType.arrayOf(PropType.node),
-    PropType.node,
-  ]).isRequired,
+    PropType.node
+  ]).isRequired
 };
 
 export default Badge;
