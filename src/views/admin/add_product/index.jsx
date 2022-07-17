@@ -9,7 +9,7 @@ const ProductForm = lazy(() => import('../components/ProductForm'));
 
 const AddProduct = () => {
   useScrollTop();
-  useDocumentTitle('Add New Product | shop');
+  useDocumentTitle('Add New Product | Salinaka');
   const isLoading = useSelector((state) => state.app.loading);
   const dispatch = useDispatch();
 
@@ -43,7 +43,7 @@ const AddProduct = () => {
             isFeatured: false,
             isRecommended: false,
             availableColors: [],
-            imageCollection: [],
+            imageCollection: []
           }}
         />
       </Suspense>

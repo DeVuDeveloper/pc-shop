@@ -24,7 +24,7 @@ module.exports = {
         },
       },
       {
-        test: /\.s?css$/,
+        test: /\.(sa|sc|c)ss$/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
@@ -37,9 +37,6 @@ module.exports = {
           },
           {
             loader: 'group-css-media-queries-loader',
-            options: {
-              sourceMap: true,
-            },
           },
           {
             loader: 'sass-loader',
@@ -92,8 +89,8 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'css/[name].css',
-      chunkFilename: 'css/[name].[contenthash]_[id].css',
+      filename: '[name].css',
+      chunkFilename: '[name].[contenthash]_[id].css',
     }),
   ],
 };

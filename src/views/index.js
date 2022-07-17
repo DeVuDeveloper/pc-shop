@@ -1,93 +1,20 @@
-import { ArrowRightOutlined } from '@ant-design/icons';
-import { MessageDisplay } from 'components/common';
-import { ProductShowcaseGrid } from 'components/product';
-import { FEATURED_PRODUCTS, RECOMMENDED_PRODUCTS, SHOP } from 'constants/routes';
-import {
-  useDocumentTitle, useFeaturedProducts, useRecommendedProducts, useScrollTop,
-} from 'hooks';
-import bannerImg from 'images/pc1.png';
-import React from 'react';
-import { Link } from 'react-router-dom';
+export { default as EditAccount } from './account/edit_account';
+export { default as UserAccount } from './account/user_account';
+export { default as AddProduct } from './admin/add_product';
+export { default as Dashboard } from './admin/dashboard';
+export { default as EditProduct } from './admin/edit_product';
+export { default as Products } from './admin/products';
+export { default as ForgotPassword } from './auth/forgot_password';
+export { default as SignIn } from './auth/signin';
+export { default as SignUp } from './auth/signup';
+export { default as CheckOutStep1 } from './checkout/step1';
+export { default as CheckOutStep2 } from './checkout/step2';
+export { default as CheckOutStep3 } from './checkout/step3';
+export { default as PageNotFound } from './error/PageNotFound';
+export { default as FeaturedProducts } from './featured';
+export { default as Home } from './home';
+export { default as RecommendedProducts } from './recommended';
+export { default as Search } from './search';
+export { default as Shop } from './shop';
+export { default as ViewProduct } from './view_product';
 
-const Home = () => {
-  useDocumentTitle('PC-Shop | Home');
-  useScrollTop();
-
-  const {
-    featuredProducts,
-    fetchFeaturedProducts,
-    isLoading: isLoadingFeatured,
-    error: errorFeatured,
-  } = useFeaturedProducts(6);
-  const {
-    recommendedProducts,
-    fetchRecommendedProducts,
-    isLoading: isLoadingRecommended,
-    error: errorRecommended,
-  } = useRecommendedProducts(6);
-
-  return (
-    <main className="content">
-      <div className="home">
-        <div className="banner">
-          <div className="banner-desc">
-            <h1 className="text-thin">
-              <strong>Welcome</strong>
-              &nbsp;to the safest marketplace&nbsp;
-              <strong>For newish tech</strong>
-            </h1>
-            <p>
-              Experience a new level of performance with an award-winning Digital Storm PC.
-              Built with the latest technology,
-              highest quality components and backed by lifetime support.
-            </p>
-            <br />
-            <Link to={SHOP} className="button">
-              Shop Now &nbsp;
-              <ArrowRightOutlined />
-            </Link>
-          </div>
-          <div className="banner-img"><img src={bannerImg} alt="" /></div>
-        </div>
-        <div className="display">
-          <div className="display-header">
-            <h1>Featured Products</h1>
-            <Link to={FEATURED_PRODUCTS}>See All</Link>
-          </div>
-          {(errorFeatured && !isLoadingFeatured) ? (
-            <MessageDisplay
-              message={errorFeatured}
-              action={fetchFeaturedProducts}
-              buttonLabel="Try Again"
-            />
-          ) : (
-            <ProductShowcaseGrid
-              products={featuredProducts}
-              skeletonCount={6}
-            />
-          )}
-        </div>
-        <div className="display">
-          <div className="display-header">
-            <h1>Recommended Products</h1>
-            <Link to={RECOMMENDED_PRODUCTS}>See All</Link>
-          </div>
-          {(errorRecommended && !isLoadingRecommended) ? (
-            <MessageDisplay
-              message={errorRecommended}
-              action={fetchRecommendedProducts}
-              buttonLabel="Try Again"
-            />
-          ) : (
-            <ProductShowcaseGrid
-              products={recommendedProducts}
-              skeletonCount={6}
-            />
-          )}
-        </div>
-      </div>
-    </main>
-  );
-};
-
-export default Home;
