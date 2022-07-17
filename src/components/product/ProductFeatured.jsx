@@ -4,7 +4,7 @@ import React from 'react';
 import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
 import { useHistory } from 'react-router-dom';
 
-const FeaturedProduct = ({ product }) => {
+const ProductFeatured = ({ product }) => {
   const history = useHistory();
   const onClickItem = () => {
     if (!product) return;
@@ -34,7 +34,7 @@ const FeaturedProduct = ({ product }) => {
   );
 };
 
-FeaturedProduct.propTypes = {
+ProductFeatured.propTypes = {
   product: PropType.shape({
     image: PropType.string,
     name: PropType.string,
@@ -43,4 +43,4 @@ FeaturedProduct.propTypes = {
   }).isRequired,
 };
 
-export default FeaturedProduct;
+export default ProductFeatured;

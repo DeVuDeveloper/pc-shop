@@ -51,7 +51,7 @@ const Navigation = () => {
     ROUTE.CHECKOUT_STEP_3,
     ROUTE.SIGNIN,
     ROUTE.SIGNUP,
-    ROUTE.FORGOT_PASSWORD
+    ROUTE.FORGOT_PASSWORD,
   ];
 
   if (store.user && store.user.role === 'ADMIN') {

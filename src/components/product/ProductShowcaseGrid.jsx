@@ -1,18 +1,18 @@
 /* eslint-disable react/forbid-prop-types */
-import { FeaturedProduct } from 'components/product';
 import PropType from 'prop-types';
 import React from 'react';
+import ProductFeatured from './ProductFeatured';
 
 const ProductShowcase = ({ products, skeletonCount }) => (
   <div className="product-display-grid">
     {(products.length === 0) ? new Array(skeletonCount).fill({}).map((product, index) => (
-      <FeaturedProduct
+      <ProductFeatured
         // eslint-disable-next-line react/no-array-index-key
         key={`product-skeleton ${index}`}
         product={product}
       />
     )) : products.map((product) => (
-      <FeaturedProduct
+      <ProductFeatured
         key={product.id}
         product={product}
       />
