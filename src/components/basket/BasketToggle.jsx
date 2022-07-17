@@ -26,8 +26,8 @@ BasketToggle.propTypes = {
   children: PropType.oneOfType([
     PropType.arrayOf(PropType.node),
     PropType.func,
-    PropType.node,
-  ]).isRequired,
+    PropType.node
+  ]).isRequired
 };
 
 export default BasketToggle;

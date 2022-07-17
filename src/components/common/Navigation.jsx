@@ -1,11 +1,11 @@
 /* eslint-disable indent */
 import { FilterOutlined, ShoppingOutlined } from '@ant-design/icons';
 import * as ROUTE from 'constants/routes';
-import logo from 'images/logo-full.png';
+import logo from 'images/pc1.png';
 import React, { useEffect, useRef } from 'react';
 import { useSelector } from 'react-redux';
 import {
-  Link, NavLink, useLocation
+  Link, NavLink, useLocation,
 } from 'react-router-dom';
 import UserAvatar from 'views/account/components/UserAvatar';
 import BasketToggle from '../basket/BasketToggle';

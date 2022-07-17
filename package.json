@@ -65,7 +65,7 @@
     "@ant-design/icons": "^4.6.2",
     "copy-webpack-plugin": "^6.4.1",
     "firebase": "^8.4.3",
-    "formik": "^2.2.6",
+    "formik": "^2.2.9",
     "history": "^4.10.0",
     "moment": "^2.29.1",
     "normalize.css": "^8.0.1",
