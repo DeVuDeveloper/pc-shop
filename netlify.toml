@@ -5,6 +5,9 @@
    to = "/index.html"
    status = 200
 
+   [[plugins]]
+   package = "@netlify/plugin-functions-install-core"
+
   ## (optional) Settings for Netlify Dev
   ## https://github.com/netlify/cli/blob/main/docs/netlify-dev.md#project-detection
   #[dev]
