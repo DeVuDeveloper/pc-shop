@@ -121,8 +121,7 @@ class Firebase {
             const snapshot = await query.get();
             const products = [];
             snapshot.forEach((doc) =>
-              products.push({ id: doc.id, ...doc.data() })
-            );
+              products.push({ id: doc.id, ...doc.data() }));
             const lastKey = snapshot.docs[snapshot.docs.length - 1];
 
             resolve({ products, lastKey });
@@ -148,8 +147,7 @@ class Firebase {
             if (!didTimeout) {
               const products = [];
               snapshot.forEach((doc) =>
-                products.push({ id: doc.id, ...doc.data() })
-              );
+                products.push({ id: doc.id, ...doc.data() }));
               const lastKey = snapshot.docs[snapshot.docs.length - 1];
 
               resolve({ products, lastKey, total });
@@ -213,7 +211,7 @@ class Firebase {
             // MERGE PRODUCTS
             const mergedProducts = [
               ...searchedNameProducts,
-              ...searchedKeywordsProducts,
+              ...searchedKeywordsProducts
             ];
             const hash = {};
 

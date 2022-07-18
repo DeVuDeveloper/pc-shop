@@ -1,5 +1,6 @@
+/* eslint-disable no-undef */
 const firebaseConfig = {
-  apiKey: process.env.FIREBASE_API_KEY,
+  apiKey: AIzaSyAMk9CN2pAIRaX4a1LPlFupBVDEIYE3rS8,
   authDomain: process.env.FIREBASE_AUTH_DOMAIN,
   databaseURL: process.env.FIREBASE_DB_URL,
   projectId: process.env.FIREBASE_PROJECT_ID,
