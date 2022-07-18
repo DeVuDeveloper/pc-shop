@@ -175,7 +175,7 @@ const ProductForm = ({ product, onSubmit, isLoading }) => {
                     defaultValue={values.keywords.map((key) => ({ value: key, label: key }))}
                     name="sizes"
                     iid="sizes"
-                    type="number"
+                    type="decimal"
                     isMulti
                     disabled={isLoading}
                     placeholder="Create/Select Sizes"
