@@ -1,4 +1,4 @@
-## PC Shop
+## PC Shop Re
 
 <div id="top"></div>
 <!-- PROJECT LOGO -->
