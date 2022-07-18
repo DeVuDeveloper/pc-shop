@@ -11,7 +11,7 @@
 .
 <a href="https://github.com/VuDej/pc-shop/issues">Report Bug</a>
 ·
-<a href="https://github.com/VuDej/pc-shop>Request Feature</a>
+<a href="https://github.com/VuDej/pc-shop">Request Feature</a>
 
 </div>
 
@@ -48,7 +48,7 @@ git clone https://github.com/VuDej/pc-shop.git
 ### Move into the directory with
 
 ```bash
-cd restaurant-frontend
+cd pc-shop
 ```
 
 ### Install linter
