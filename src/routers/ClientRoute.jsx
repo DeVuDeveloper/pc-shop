@@ -29,7 +29,7 @@ const PrivateRoute = ({
         <Redirect to={{
           pathname: SIGNIN,
           // eslint-disable-next-line react/prop-types
-          state: { from: props.location },
+          state: { from: props.location }
         }}
         />
       );
@@ -39,7 +39,7 @@ const PrivateRoute = ({
 
 PrivateRoute.defaultProps = {
   isAuth: false,
-  role: 'USER',
+  role: 'USER'
 };
 
 PrivateRoute.propTypes = {
@@ -47,12 +47,12 @@ PrivateRoute.propTypes = {
   role: PropType.string,
   component: PropType.func.isRequired,
   // eslint-disable-next-line react/require-default-props
-  rest: PropType.any,
+  rest: PropType.any
 };
 
 const mapStateToProps = ({ auth }) => ({
   isAuth: !!auth,
-  role: auth?.role || '',
+  role: auth?.role || ''
 });
 
 export default connect(mapStateToProps)(PrivateRoute);

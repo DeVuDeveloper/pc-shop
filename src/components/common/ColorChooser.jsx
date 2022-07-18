@@ -25,7 +25,7 @@ const ColorChooser = ({ availableColors, onSelectedColorChange }) => {
 
 ColorChooser.propTypes = {
   availableColors: PropType.arrayOf(PropType.string).isRequired,
-  onSelectedColorChange: PropType.func.isRequired,
+  onSelectedColorChange: PropType.func.isRequired
 };
 
 export default ColorChooser;

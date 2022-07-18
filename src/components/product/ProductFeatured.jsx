@@ -39,8 +39,8 @@ ProductFeatured.propTypes = {
     image: PropType.string,
     name: PropType.string,
     id: PropType.string,
-    brand: PropType.string,
-  }).isRequired,
+    brand: PropType.string
+  }).isRequired
 };
 
 export default ProductFeatured;

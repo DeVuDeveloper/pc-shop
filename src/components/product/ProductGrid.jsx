@@ -28,7 +28,7 @@ const ProductGrid = ({ products }) => {
 
 ProductGrid.propTypes = {
   // eslint-disable-next-line react/forbid-prop-types
-  products: PropType.array.isRequired,
+  products: PropType.array.isRequired
 };
 
 export default ProductGrid;

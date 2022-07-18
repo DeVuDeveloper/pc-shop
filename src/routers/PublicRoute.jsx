@@ -36,7 +36,7 @@ const PublicRoute = ({
 PublicRoute.defaultProps = {
   isAuth: false,
   role: 'USER',
-  path: '/',
+  path: '/'
 };
 
 PublicRoute.propTypes = {
@@ -45,12 +45,12 @@ PublicRoute.propTypes = {
   component: PropType.func.isRequired,
   path: PropType.string,
   // eslint-disable-next-line react/require-default-props
-  rest: PropType.any,
+  rest: PropType.any
 };
 
 const mapStateToProps = ({ auth }) => ({
   isAuth: !!auth,
-  role: auth?.role || '',
+  role: auth?.role || ''
 });
 
 export default connect(mapStateToProps)(PublicRoute);

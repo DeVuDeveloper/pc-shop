@@ -1,11 +1,11 @@
 /* eslint-disable indent */
 import { FilterOutlined, ShoppingOutlined } from '@ant-design/icons';
 import * as ROUTE from 'constants/routes';
-import logo from 'images/pc1.png';
+import logo from 'images/logo-full.png';
 import React, { useEffect, useRef } from 'react';
 import { useSelector } from 'react-redux';
 import {
-  Link, NavLink, useLocation,
+  Link, NavLink, useLocation
 } from 'react-router-dom';
 import UserAvatar from 'views/account/components/UserAvatar';
 import BasketToggle from '../basket/BasketToggle';
@@ -51,7 +51,7 @@ const Navigation = () => {
     ROUTE.CHECKOUT_STEP_3,
     ROUTE.SIGNIN,
     ROUTE.SIGNUP,
-    ROUTE.FORGOT_PASSWORD,
+    ROUTE.FORGOT_PASSWORD
   ];
 
   if (store.user && store.user.role === 'ADMIN') {
