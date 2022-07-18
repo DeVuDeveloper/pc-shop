@@ -9,7 +9,7 @@ import { editProduct } from 'redux/actions/productActions';
 const ProductForm = lazy(() => import('../components/ProductForm'));
 
 const EditProduct = ({ match }) => {
-  useDocumentTitle('Edit Product | PC Shop');
+  useDocumentTitle('Edit Product | shop-77a2e');
   useScrollTop();
   const { product, error, isLoading } = useProduct(match.params.id);
   const dispatch = useDispatch();

@@ -1,17 +1,17 @@
-## PC Shop Re
+## shop-77a2e Re
 
 <div id="top"></div>
 <!-- PROJECT LOGO -->
 <div align="center">
   
-<a href="https://github.com/VuDej/pc-shop/restaurant-frontend#readme"><strong>Explore the docs »</strong></a>
+<a href="https://github.com/VuDej/shop-77a2e/restaurant-frontend#readme"><strong>Explore the docs »</strong></a>
 <br />
 <br />
  <a href="">View Demo</a>
 .
-<a href="https://github.com/VuDej/pc-shop/issues">Report Bug</a>
+<a href="https://github.com/VuDej/shop-77a2e/issues">Report Bug</a>
 ·
-<a href="https://github.com/VuDej/pc-shop">Request Feature</a>
+<a href="https://github.com/VuDej/shop-77a2e">Request Feature</a>
 
 </div>
 
@@ -22,7 +22,7 @@
 
 ## Description 🏗️
 
-PC Shop Web App. User can list products, add in basket and add shiping adress and make payment. Admin can create products. User can signup with email, google, github and fb.
+shop-77a2e Web App. User can list products, add in basket and add shiping adress and make payment. Admin can create products. User can signup with email, google, github and fb.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -42,13 +42,13 @@ You will be needing:
 ### Clone this repository
 
 ```bash
-git clone https://github.com/VuDej/pc-shop.git
+git clone https://github.com/VuDej/shop-77a2e.git
 ```
 
 ### Move into the directory with
 
 ```bash
-cd pc-shop
+cd shop-77a2e
 ```
 
 ### Install linter
@@ -161,7 +161,7 @@ If you have a suggestion that would make this better, please fork the repo and c
 - Push to the Branch (git push origin feature/AmazingFeature)
 - Open a Pull Request
 
-Feel free to check the [issues page](https://github.com/VuDej/pc-shop/issues).
+Feel free to check the [issues page](https://github.com/VuDej/shop-77a2e/issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

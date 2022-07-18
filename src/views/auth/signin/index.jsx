@@ -29,7 +29,7 @@ const SignIn = ({ history }) => {
   const dispatch = useDispatch();
 
   useScrollTop();
-  useDocumentTitle('Sign In | PC Shop');
+  useDocumentTitle('Sign In | shop-77a2e');
 
   useEffect(() => () => {
     dispatch(setAuthStatus(null));
@@ -65,7 +65,7 @@ const SignIn = ({ history }) => {
           )}
           <div className={`auth ${authStatus?.message && (!authStatus?.success && 'input-error')}`}>
             <div className="auth-main">
-              <h3>Sign in to PC Shop</h3>
+              <h3>Sign in to shop-77a2e</h3>
               <br />
               <div className="auth-wrapper">
                 <Formik
