@@ -23,7 +23,7 @@ const Navigation = (props) => {
       <div className="mobile-navigation-main">
         <div className="mobile-navigation-logo">
           <Link onClick={onClickLink} to={HOME}>
-            <h2>PC Shop</h2>
+            <h2>shop-77a2e</h2>
           </Link>
         </div>
 
@@ -37,7 +37,7 @@ const Navigation = (props) => {
             >
 
               <Badge count={basketLength}>
-                <i className="fa fa-shopping-bag" style={{ fontSize: '2rem' }} />
+                <i className="fa fa-shop-77a2eping-bag" style={{ fontSize: '2rem' }} />
               </Badge>
             </button>
           )}

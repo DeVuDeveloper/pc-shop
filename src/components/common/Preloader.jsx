@@ -7,7 +7,7 @@ const Preloader = () => (
       <circle cx="20.62" cy="20.62" r="20.62" />
       <circle className="fill-white" cx="29.97" cy="14.93" r="6.58" />
     </svg>
-    <img alt="PC Shop logo wordmark" src={logoWordmark} />
+    <img alt="shop-77a2e logo wordmark" src={logoWordmark} />
   </div>
 );
 
