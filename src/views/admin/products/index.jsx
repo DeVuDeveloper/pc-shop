@@ -10,7 +10,7 @@ import { ProductsNavbar } from '../components';
 import ProductsTable from '../components/ProductsTable';
 
 const Products = () => {
-  useDocumentTitle('Product List | PC Shop Admin');
+  useDocumentTitle('Product List | Salinaka Admin');
   useScrollTop();
 
   const store = useSelector((state) => ({

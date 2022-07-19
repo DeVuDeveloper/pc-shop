@@ -1,12 +1,11 @@
-/* eslint-disable react/function-component-definition */
 import { MessageDisplay } from 'components/common';
 import { ProductShowcaseGrid } from 'components/product';
 import { useDocumentTitle, useRecommendedProducts, useScrollTop } from 'hooks';
-import bannerImg from 'images/pc3.png';
+import bannerImg from 'images/banner-girl-1.png';
 import React from 'react';
 
 const RecommendedProducts = () => {
-  useDocumentTitle('Recommended Products | PC Shop');
+  useDocumentTitle('Recommended Products | Salinaka');
   useScrollTop();
 
   const {

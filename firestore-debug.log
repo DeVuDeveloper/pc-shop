@@ -5,11 +5,3 @@ If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment
 
 Dev App Server is now running.
 
-Jul 19, 2022 11:10:32 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Jul 19, 2022 11:10:33 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected HTTP/2 connection.
-Jul 19, 2022 11:12:17 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
-INFO: Detected non-HTTP/2 connection.
-Jul 19, 2022 11:12:18 AM io.gapi.emulators.netty.NotFoundHandler handleRequest
-INFO: Unknown request URI: /favicon.ico
