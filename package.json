@@ -51,6 +51,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
+    "@firebase/app-compat": "^0.1.29",
     "firebase": "^8.4.3",
     "formik": "^2.2.9",
     "history": "^4.10.0",
