@@ -10,7 +10,7 @@ const baseConfig = require("./base.config.js");
 DotEnv.config({ path: ".env.dev" });
 
 module.exports = merge(baseConfig, {
-  mode: "production",
+  mode: "development",
   devtool: "inline-source-map",
   devServer: {
     historyApiFallback: true,
