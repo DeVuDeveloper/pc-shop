@@ -1,0 +1,134 @@
+[debug] [2022-07-19T14:30:42.715Z] ----------------------------------------------------------------------
+[debug] [2022-07-19T14:30:42.718Z] Command:       /home/dejan/.nvm/versions/node/v16.16.0/bin/node /home/dejan/.nvm/versions/node/v16.16.0/bin/firebase deploy --only hosting
+[debug] [2022-07-19T14:30:42.718Z] CLI Version:   11.3.0
+[debug] [2022-07-19T14:30:42.718Z] Platform:      linux
+[debug] [2022-07-19T14:30:42.718Z] Node Version:  v16.16.0
+[debug] [2022-07-19T14:30:42.719Z] Time:          Tue Jul 19 2022 16:30:42 GMT+0200 (Central European Summer Time)
+[debug] [2022-07-19T14:30:42.719Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-19T14:30:42.781Z] Field ".emulators.firestore.port" in "firebase.json" is possibly invalid: should be number
+[debug] [2022-07-19T14:30:42.786Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-19T14:30:42.786Z] > authorizing via signed-in user (drvu47@gmail.com)
+[debug] [2022-07-19T14:30:42.787Z] [iam] checking project pc-shop for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-07-19T14:30:42.789Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/pc-shop:testIamPermissions [none]
+[debug] [2022-07-19T14:30:42.789Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pc-shop:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-19T14:30:43.731Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/pc-shop:testIamPermissions 200
+[debug] [2022-07-19T14:30:43.731Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pc-shop:testIamPermissions {}
+[debug] [2022-07-19T14:30:43.732Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project pc-shop:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2022-07-19T14:30:43.734Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pc-shop [none]
+[debug] [2022-07-19T14:30:44.136Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pc-shop 403
+[debug] [2022-07-19T14:30:44.137Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pc-shop {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-07-19T14:30:44.139Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-07-19T14:30:44.264Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (/home/dejan/.nvm/versions/node/v16.16.0/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/home/dejan/.nvm/versions/node/v16.16.0/lib/node_modules/firebase-tools/lib/apiv2.js:287:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project pc-shop. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-07-19T14:32:06.108Z] ----------------------------------------------------------------------
+[debug] [2022-07-19T14:32:06.111Z] Command:       /home/dejan/.nvm/versions/node/v16.16.0/bin/node /home/dejan/.nvm/versions/node/v16.16.0/bin/firebase deploy --only hosting
+[debug] [2022-07-19T14:32:06.111Z] CLI Version:   11.3.0
+[debug] [2022-07-19T14:32:06.111Z] Platform:      linux
+[debug] [2022-07-19T14:32:06.111Z] Node Version:  v16.16.0
+[debug] [2022-07-19T14:32:06.112Z] Time:          Tue Jul 19 2022 16:32:06 GMT+0200 (Central European Summer Time)
+[debug] [2022-07-19T14:32:06.112Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-19T14:32:06.181Z] Field ".emulators.firestore.port" in "firebase.json" is possibly invalid: should be number
+[debug] [2022-07-19T14:32:06.185Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-19T14:32:06.186Z] > authorizing via signed-in user (drvu47@gmail.com)
+[debug] [2022-07-19T14:32:06.186Z] [iam] checking project pc-shop for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-07-19T14:32:06.188Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/pc-shop:testIamPermissions [none]
+[debug] [2022-07-19T14:32:06.189Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pc-shop:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-19T14:32:07.132Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/pc-shop:testIamPermissions 200
+[debug] [2022-07-19T14:32:07.133Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pc-shop:testIamPermissions {}
+[debug] [2022-07-19T14:32:07.134Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project pc-shop:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2022-07-19T14:32:07.136Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pc-shop [none]
+[debug] [2022-07-19T14:32:07.435Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pc-shop 403
+[debug] [2022-07-19T14:32:07.436Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pc-shop {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-07-19T14:32:07.437Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-07-19T14:32:07.560Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (/home/dejan/.nvm/versions/node/v16.16.0/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/home/dejan/.nvm/versions/node/v16.16.0/lib/node_modules/firebase-tools/lib/apiv2.js:287:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project pc-shop. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-07-19T14:32:19.155Z] ----------------------------------------------------------------------
+[debug] [2022-07-19T14:32:19.157Z] Command:       /home/dejan/.nvm/versions/node/v16.16.0/bin/node /home/dejan/.nvm/versions/node/v16.16.0/bin/firebase deploy --only hosting
+[debug] [2022-07-19T14:32:19.158Z] CLI Version:   11.3.0
+[debug] [2022-07-19T14:32:19.158Z] Platform:      linux
+[debug] [2022-07-19T14:32:19.158Z] Node Version:  v16.16.0
+[debug] [2022-07-19T14:32:19.158Z] Time:          Tue Jul 19 2022 16:32:19 GMT+0200 (Central European Summer Time)
+[debug] [2022-07-19T14:32:19.158Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-19T14:32:19.220Z] Field ".emulators.firestore.port" in "firebase.json" is possibly invalid: should be number
+[debug] [2022-07-19T14:32:19.225Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-19T14:32:19.226Z] > authorizing via signed-in user (drvu47@gmail.com)
+[debug] [2022-07-19T14:32:19.226Z] [iam] checking project pc-shop for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-07-19T14:32:19.228Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/pc-shop:testIamPermissions [none]
+[debug] [2022-07-19T14:32:19.228Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pc-shop:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-19T14:32:20.132Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/pc-shop:testIamPermissions 200
+[debug] [2022-07-19T14:32:20.132Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pc-shop:testIamPermissions {}
+[debug] [2022-07-19T14:32:20.133Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project pc-shop:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2022-07-19T14:32:20.136Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pc-shop [none]
+[debug] [2022-07-19T14:32:20.431Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pc-shop 403
+[debug] [2022-07-19T14:32:20.432Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pc-shop {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-07-19T14:32:20.434Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-07-19T14:32:20.559Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (/home/dejan/.nvm/versions/node/v16.16.0/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/home/dejan/.nvm/versions/node/v16.16.0/lib/node_modules/firebase-tools/lib/apiv2.js:287:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project pc-shop. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-07-19T14:34:04.506Z] ----------------------------------------------------------------------
+[debug] [2022-07-19T14:34:04.508Z] Command:       /home/dejan/.nvm/versions/node/v16.16.0/bin/node /home/dejan/.nvm/versions/node/v16.16.0/bin/firebase deploy --only hosting
+[debug] [2022-07-19T14:34:04.509Z] CLI Version:   11.3.0
+[debug] [2022-07-19T14:34:04.509Z] Platform:      linux
+[debug] [2022-07-19T14:34:04.509Z] Node Version:  v16.16.0
+[debug] [2022-07-19T14:34:04.510Z] Time:          Tue Jul 19 2022 16:34:04 GMT+0200 (Central European Summer Time)
+[debug] [2022-07-19T14:34:04.510Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-19T14:34:04.577Z] Field ".emulators.firestore.port" in "firebase.json" is possibly invalid: should be number
+[debug] [2022-07-19T14:34:04.581Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-19T14:34:04.581Z] > authorizing via signed-in user (drvu47@gmail.com)
+[debug] [2022-07-19T14:34:04.582Z] [iam] checking project pc-shop for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-07-19T14:34:04.584Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/pc-shop:testIamPermissions [none]
+[debug] [2022-07-19T14:34:04.584Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pc-shop:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-19T14:34:05.535Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/pc-shop:testIamPermissions 200
+[debug] [2022-07-19T14:34:05.536Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pc-shop:testIamPermissions {}
+[debug] [2022-07-19T14:34:05.537Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project pc-shop:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2022-07-19T14:34:05.543Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pc-shop [none]
+[debug] [2022-07-19T14:34:05.861Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pc-shop 403
+[debug] [2022-07-19T14:34:05.862Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pc-shop {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-07-19T14:34:05.864Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-07-19T14:34:05.988Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (/home/dejan/.nvm/versions/node/v16.16.0/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/home/dejan/.nvm/versions/node/v16.16.0/lib/node_modules/firebase-tools/lib/apiv2.js:287:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project pc-shop. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-07-19T14:44:55.127Z] ----------------------------------------------------------------------
+[debug] [2022-07-19T14:44:55.129Z] Command:       /home/dejan/.nvm/versions/node/v16.16.0/bin/node /home/dejan/.nvm/versions/node/v16.16.0/bin/firebase use --add
+[debug] [2022-07-19T14:44:55.130Z] CLI Version:   11.3.0
+[debug] [2022-07-19T14:44:55.130Z] Platform:      linux
+[debug] [2022-07-19T14:44:55.130Z] Node Version:  v16.16.0
+[debug] [2022-07-19T14:44:55.131Z] Time:          Tue Jul 19 2022 16:44:55 GMT+0200 (Central European Summer Time)
+[debug] [2022-07-19T14:44:55.131Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-19T14:44:55.199Z] Field ".emulators.firestore.port" in "firebase.json" is possibly invalid: should be number
+[debug] [2022-07-19T14:44:55.203Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-19T14:44:55.204Z] > authorizing via signed-in user (drvu47@gmail.com)
+[debug] [2022-07-19T14:44:55.207Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2022-07-19T14:44:55.753Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-07-19T14:44:55.754Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
