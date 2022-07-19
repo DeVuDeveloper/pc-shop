@@ -1,4 +1,4 @@
-## PC Shop
+## PC Shop- React
 
 <div id="top"></div>
 <!-- PROJECT LOGO -->
