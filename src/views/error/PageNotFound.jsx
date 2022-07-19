@@ -1,3 +1,4 @@
+/* eslint-disable react/function-component-definition */
 import { useScrollTop } from 'hooks';
 import PropType from 'prop-types';
 import React from 'react';

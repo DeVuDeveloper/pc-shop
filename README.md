@@ -1,28 +1,28 @@
-## shop-77a2e Re
+## PC Shop- React
 
 <div id="top"></div>
 <!-- PROJECT LOGO -->
 <div align="center">
   
-<a href="https://github.com/VuDej/shop-77a2e/restaurant-frontend#readme"><strong>Explore the docs »</strong></a>
+<a href="https://github.com/VuDej/pc-shop#readme"><strong>Explore the docs »</strong></a>
 <br />
 <br />
- <a href="">View Demo</a>
+ <a href="https://shop-77a2e.web.app/">View Demo</a>
 .
-<a href="https://github.com/VuDej/shop-77a2e/issues">Report Bug</a>
+<a href="https://github.com/VuDej/pc-shop">Report Bug</a>
 ·
-<a href="https://github.com/VuDej/shop-77a2e">Request Feature</a>
+<a href="https://github.com/VuDej/pc-shop">Request Feature</a>
 
 </div>
 
 
 ## Screenshots
 
-![Screenshot]()
+![Screenshot](src/images/screenshot.png)
 
 ## Description 🏗️
 
-shop-77a2e Web App. User can list products, add in basket and add shiping adress and make payment. Admin can create products. User can signup with email, google, github and fb.
+Top web application built with react-redux and firebase. The user can see the list of products (PC) and the recommended list created using the marketing algorithm. User can register with email, google account, fb account and github account. The user can add the product to the cart, and order the product by adding the delivery address and pay for the product online. The administrator manages the users and creates the product. Added various filters for product search.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -42,13 +42,13 @@ You will be needing:
 ### Clone this repository
 
 ```bash
-git clone https://github.com/VuDej/shop-77a2e.git
+git clone https://github.com/VuDej/pc-shop.git
 ```
 
 ### Move into the directory with
 
 ```bash
-cd shop-77a2e
+cd pc-shop
 ```
 
 ### Install linter
@@ -121,16 +121,18 @@ npm start
 
 <div align="center">
 
-|     | Languages                                                                                                                                                                                                               |     |
-| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- |
-|     | ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white) |     |
+## Technology Stack 🛠️  
 
-</div>
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)                                                                                                                                                    
+
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)  
+
+ |
+ ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) ![GitHub](https://img.shields.io/badge/github%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white) ![Git](https://img.shields.io/badge/git%20-%23F05033.svg?&style=for-the-badge&logo=git&logoColor=white) ![Yarn](https://img.shields.io/badge/yarn-%232C8EBB.svg?style=for-the-badge&logo=yarn&logoColor=white)
 
 <div align="center">
 
-                                                                                                                                                                                                                                                                                                                                                                                     |    
-|     | ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white) ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white) |     |
+                                                                                                                                                                                                                                                                                                                                                        
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 </div>
@@ -161,7 +163,7 @@ If you have a suggestion that would make this better, please fork the repo and c
 - Push to the Branch (git push origin feature/AmazingFeature)
 - Open a Pull Request
 
-Feel free to check the [issues page](https://github.com/VuDej/shop-77a2e/issues).
+Feel free to check the [issues page](https://github.com/VuDej/pc-shop.git/issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

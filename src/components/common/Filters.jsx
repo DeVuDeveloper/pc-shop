@@ -1,3 +1,4 @@
+/* eslint-disable react/function-component-definition */
 /* eslint-disable no-nested-ternary */
 import { useDidMount } from 'hooks';
 import PropType from 'prop-types';

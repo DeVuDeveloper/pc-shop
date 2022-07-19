@@ -1,3 +1,4 @@
+/* eslint-disable react/function-component-definition */
 import { ArrowRightOutlined } from '@ant-design/icons';
 import { MessageDisplay } from 'components/common';
 import { ProductShowcaseGrid } from 'components/product';
