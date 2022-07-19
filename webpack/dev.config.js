@@ -13,7 +13,10 @@ module.exports = merge(baseConfig, {
   mode: "development",
   devtool: "inline-source-map",
   devServer: {
+    contentBase: false,
+    publicPath: "/",
     historyApiFallback: true,
+    clientLogLevel: "warning",
     compress: true,
   },
   plugins: [
