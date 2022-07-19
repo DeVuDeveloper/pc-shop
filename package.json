@@ -2,7 +2,6 @@
   "name": "shop-77a2e",
   "version": "1.2.0",
   "main": "index.js",
-  "author": "Vujovic Dejan",
   "keywords": [
     "react-webpack",
     "boilerplate",
@@ -63,7 +62,9 @@
   },
   "dependencies": {
     "@ant-design/icons": "^4.6.2",
-    "firebase": "^8.10.1",
+    "firebase": "^8.4.3",
+    "firebase-admin": "^11.0.0",
+    "firebase-functions": "^3.22.0",
     "formik": "^2.2.6",
     "history": "^4.10.0",
     "moment": "^2.29.1",
@@ -84,11 +85,6 @@
     "redux-thunk": "^2.3.0",
     "uuid": "^8.3.2",
     "webfontloader": "^1.6.28",
-    "workbox-core": "^6.5.3",
-    "workbox-expiration": "^6.5.3",
-    "workbox-precaching": "^6.5.3",
-    "workbox-routing": "^6.5.3",
-    "workbox-strategies": "^6.5.3",
     "yup": "^0.32.9"
   }
 }

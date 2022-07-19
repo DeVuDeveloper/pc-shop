@@ -1,3 +1,4 @@
+/* eslint-disable react/function-component-definition */
 import { MessageDisplay } from 'components/common';
 import { ProductShowcaseGrid } from 'components/product';
 import { useDocumentTitle, useFeaturedProducts, useScrollTop } from 'hooks';
