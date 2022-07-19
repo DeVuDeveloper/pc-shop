@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "salinaka-ecommerce"
-  }
+    "pc-shop": "shop-77a2e"
+  },
+  "targets": {},
+  "etags": {}
 }

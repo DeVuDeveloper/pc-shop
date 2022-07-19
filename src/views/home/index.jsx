@@ -1,24 +1,31 @@
+/* eslint-disable react/function-component-definition */
 import { ArrowRightOutlined } from '@ant-design/icons';
 import { MessageDisplay } from 'components/common';
 import { ProductShowcaseGrid } from 'components/product';
-import { FEATURED_PRODUCTS, RECOMMENDED_PRODUCTS, SHOP } from 'constants/routes';
 import {
-  useDocumentTitle, useFeaturedProducts, useRecommendedProducts, useScrollTop
+  FEATURED_PRODUCTS,
+  RECOMMENDED_PRODUCTS,
+  SHOP
+} from 'constants/routes';
+import {
+  useDocumentTitle,
+  useFeaturedProducts,
+  useRecommendedProducts,
+  useScrollTop
 } from 'hooks';
-import bannerImg from 'images/banner-girl.png';
+import bannerImg from 'images/pc1.png';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-
 const Home = () => {
-  useDocumentTitle('Salinaka | Home');
+  useDocumentTitle('PC Shop | Home');
   useScrollTop();
 
   const {
     featuredProducts,
     fetchFeaturedProducts,
     isLoading: isLoadingFeatured,
-    error: errorFeatured
+    error: errorFeatured,
   } = useFeaturedProducts(6);
   const {
     recommendedProducts,
@@ -33,13 +40,13 @@ const Home = () => {
         <div className="banner">
           <div className="banner-desc">
             <h1 className="text-thin">
-              <strong>See</strong>
-              &nbsp;everything with&nbsp;
-              <strong>Clarity</strong>
+              <strong>Think</strong>
+              &nbsp;IT&nbsp;
+              <strong>Think Real</strong>
             </h1>
             <p>
-              Buying eyewear should leave you happy and good-looking, with money in your pocket.
-              Glasses, sunglasses, and contacts—we’ve got your eyes covered.
+              Having built up a very solid and stable reputation for our quality
+              products and services over the last two decades
             </p>
             <br />
             <Link to={SHOP} className="button">
@@ -47,14 +54,16 @@ const Home = () => {
               <ArrowRightOutlined />
             </Link>
           </div>
-          <div className="banner-img"><img src={bannerImg} alt="" /></div>
+          <div className="banner-img">
+            <img src={bannerImg} alt="" />
+          </div>
         </div>
         <div className="display">
           <div className="display-header">
             <h1>Featured Products</h1>
             <Link to={FEATURED_PRODUCTS}>See All</Link>
           </div>
-          {(errorFeatured && !isLoadingFeatured) ? (
+          {errorFeatured && !isLoadingFeatured ? (
             <MessageDisplay
               message={errorFeatured}
               action={fetchFeaturedProducts}
@@ -72,7 +81,7 @@ const Home = () => {
             <h1>Recommended Products</h1>
             <Link to={RECOMMENDED_PRODUCTS}>See All</Link>
           </div>
-          {(errorRecommended && !isLoadingRecommended) ? (
+          {errorRecommended && !isLoadingRecommended ? (
             <MessageDisplay
               message={errorRecommended}
               action={fetchRecommendedProducts}

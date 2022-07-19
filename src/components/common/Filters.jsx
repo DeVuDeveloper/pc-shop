@@ -1,3 +1,4 @@
+/* eslint-disable react/function-component-definition */
 /* eslint-disable no-nested-ternary */
 import { useDidMount } from 'hooks';
 import PropType from 'prop-types';
@@ -93,10 +94,9 @@ const Filters = ({ closeModal }) => {
             onChange={onBrandFilterChange}
           >
             <option value="">All Brands</option>
-            <option value="salt">Salt Maalat</option>
-            <option value="betsin">Betsin Maalat</option>
-            <option value="black">Black Kibal</option>
-            <option value="sexbomb">Sexbomb</option>
+            <option value="salt">Omen</option>
+            <option value="betsin">Predator</option>
+            <option value="black">Origin</option>
           </select>
         )}
       </div>
