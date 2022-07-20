@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "pc-shop-dejan"
+    "default": "pc-shop-dejan",
+    "pc-shop-dejan": "pc-shop-dejan"
   }
 }
