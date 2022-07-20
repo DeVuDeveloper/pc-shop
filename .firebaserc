@@ -1,8 +1,5 @@
 {
   "projects": {
-    "default": "PC Shop",
-    "pc-shop": "pc-shop"
-  },
-  "targets": {},
-  "etags": {}
+    "default": "pc-shop-dejan"
+  }
 }

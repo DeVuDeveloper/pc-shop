@@ -6,7 +6,7 @@ import bannerImg from 'images/pc2.png';
 import React from 'react';
 
 const FeaturedProducts = () => {
-  useDocumentTitle('Featured Products | shop-77a2e');
+  useDocumentTitle('Featured Products | PC Shopa2e');
   useScrollTop();
 
   const {

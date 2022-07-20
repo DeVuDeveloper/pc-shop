@@ -68,7 +68,7 @@ const Basket = () => {
             onClick={onCloseModal}
             type="button"
           >
-            Continue shop-77a2eping
+            Continue PC Shopa2eping
           </button>
           &nbsp;
           <button
