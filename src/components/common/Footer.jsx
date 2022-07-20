@@ -18,7 +18,7 @@ const Footer = () => {
           <span>
             Developed by
             {' '}
-            <a href="https://github.com/jgudo">VUJOVIC DEJAN</a>
+            <a href="https://github.com/VuDej">VUJOVIC DEJAN</a>
           </span>
         </strong>
       </div>
@@ -32,8 +32,8 @@ const Footer = () => {
       <div className="footer-col-3">
         <strong>
           <span>
-            Fork this project &nbsp;
-            <a href="https://github.com/VuDej/pc-shop.git">HERE</a>
+            My Portfolio &nbsp;
+            <a href="https://porfolio-vujovic-dejan.netlify.app/">HERE</a>
           </span>
         </strong>
       </div>

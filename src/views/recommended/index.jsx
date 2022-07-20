@@ -6,7 +6,7 @@ import bannerImg from 'images/pc3.png';
 import React from 'react';
 
 const RecommendedProducts = () => {
-  useDocumentTitle('Recommended Products | shop-77a2e');
+  useDocumentTitle('Recommended Products | PC Shopa2e');
   useScrollTop();
 
   const {

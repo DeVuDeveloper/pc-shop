@@ -5,5 +5,3 @@ dist/
 .firebase/
 package-lock.json
 debug.log
-# Local Netlify folder
-.netlify

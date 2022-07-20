@@ -7,7 +7,7 @@
 <a href="https://github.com/VuDej/pc-shop#readme"><strong>Explore the docs »</strong></a>
 <br />
 <br />
- <a href="https://shop-77a2e.web.app/">View Demo</a>
+ <a href="https://PC Shopa2e.web.app/">View Demo</a>
 .
 <a href="https://github.com/VuDej/pc-shop">Report Bug</a>
 ·
