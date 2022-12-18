@@ -7,7 +7,7 @@
 <a href="https://github.com/VuDej/pc-shop#readme"><strong>Explore the docs »</strong></a>
 <br />
 <br />
- <a href="https://pc-shop-dejan.web.app/">View Demo</a>
+ <a href="https://pc-shop-dejan.netlify.app/">View Demo</a>
 .
 <a href="https://github.com/VuDej/pc-shop">Report Bug</a>
 ·
