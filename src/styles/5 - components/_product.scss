@@ -3,6 +3,7 @@
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   grid-gap: $s-size;
   justify-content: center;
+  margin-top: 50px;
 
   @include mobile {
     grid-template-columns: repeat(2, 1fr) !important;
